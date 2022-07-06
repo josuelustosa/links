@@ -4,10 +4,25 @@
   box-sizing: border-box;
 }
 
+html {
+  /* variáveis */
+  --light-color: #f2f2f2;
+  --dark-color: #121212;
+  --primary-color: #fe5626;
+  --hover-primary-color: #ff7954;
+  --secondary-color: #696969;
+}
+
 body {
-  background-color: #121212;
-  color: #ffffff;
   font-family: "Jura", sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+body.light {
+  font-family: "Jura", sans-serif;
+  background-color: var(--light-color-color);
+  color: var(--dark-color);
 }
 
 .container {
@@ -25,12 +40,12 @@ img.avatar {
   border-radius: 50%;
   width: 11.5rem;
   height: 11.5rem;
-  border: 0.25rem solid #fe5626;
+  border: 0.25rem solid var(--primary-color);
 }
 
 h1 {
   font-size: 2rem;
-  color: #fe5626;
+  color: var(--primary-color);
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -38,7 +53,7 @@ h1 {
 p.username {
   font-size: 1.125rem;
   font-weight: 400;
-  color: #696969;
+  color: var(--secondary-color);
   opacity: 0.8;
 }
 
@@ -52,8 +67,8 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fe5626;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
   text-transform: uppercase;
   font-size: 0.875rem;
 
@@ -64,20 +79,20 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #ff7954;
+  background-color: var(--hover-primary-color);
 }
 
 .bi {
-    margin: 0.313rem;
-    font-size: 1.25rem;
+  margin: 0.313rem;
+  font-size: 1.25rem;
 }
 
 footer {
-    font-weight: 500;
-    font-size: 0.75;
-    opacity: 0.6;
+  font-weight: 500;
+  font-size: 0.75;
+  opacity: 0.6;
 
-    transition: opacity 400ms;
+  transition: opacity 400ms;
 }
 
 footer:hover {
