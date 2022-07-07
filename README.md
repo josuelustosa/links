@@ -10,6 +10,7 @@ Esse projeto é uma página de links de contatos e foi proposto durante a **Mara
 
 ## :sparkles: Melhorias
 * Alterar tema da página com JavaScript (Dark/Light).
+* Implementar tags de SEO.
 
 ---
 > :paintbrush: Desenvolvido por: [Josué Lustosa | Frontend Developer](https://josuelustosa.github.io/links/).
