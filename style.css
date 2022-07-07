@@ -50,7 +50,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-p.subtitle {
+.subtitle {
   font-size: 1.25rem;
   font-weight: 400;
   margin-top: 0.50rem;
@@ -58,11 +58,12 @@ p.subtitle {
 
   transition: opacity 500ms;
 }
-p.subtitle:hover {
+
+.subtitle:hover {
   opacity: 1;
 }
 
-p.local {
+.local {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 0.50rem;
