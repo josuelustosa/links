@@ -50,9 +50,22 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-p.username {
-  font-size: 1.125rem;
+p.subtitle {
+  font-size: 1.25rem;
   font-weight: 400;
+  margin-top: 0.50rem;
+  opacity: 0.6;
+
+  transition: opacity 500ms;
+}
+p.subtitle:hover {
+  opacity: 1;
+}
+
+p.local {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.50rem;
   color: var(--secondary-color);
   opacity: 0.8;
 }
@@ -85,6 +98,10 @@ ul li a:hover {
 .bi {
   margin: 0.313rem;
   font-size: 1.25rem;
+}
+
+.local .bi {
+  font-size: 1rem;
 }
 
 footer {
