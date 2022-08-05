@@ -9,9 +9,9 @@ Esse projeto é uma página de links de contatos e foi proposto durante a **Mara
 * [Google Font](https://fonts.google.com/)
 
 ## :sparkles: Melhorias
-* Alterar tema da página com JavaScript (Dark/Light) :clock1:
-* Implementar tags de SEO :clock1:
-* Adicionar localização :white_check_mark:
+- [ ] Alterar tema da página com JavaScript (Dark/Light)
+- [ ] Implementar tags de SEO
+- [ ] Adicionar localização
 
 ---
-> :paintbrush: Desenvolvido por: [Josué Lustosa | Frontend Developer](https://josuelustosa.github.io/links/).
+> :paintbrush: Desenvolvido por: [Josué Lustosa | Software Developer](https://josuelustosa.github.io/links/).
