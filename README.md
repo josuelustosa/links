@@ -9,7 +9,7 @@ Esse projeto é uma página de links de contatos e foi proposto durante a **Mara
 * [Google Font](https://fonts.google.com/)
 
 ## :sparkles: Melhorias
-- [ ] Alterar tema da página com JavaScript (Dark/Light)
+- [x] Alterar tema da página com JavaScript (Dark/Light)
 - [ ] Implementar tags de SEO
 - [x] Adicionar localização
 
