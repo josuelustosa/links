@@ -4,25 +4,32 @@
   box-sizing: border-box;
 }
 
-html {
+html[data-theme="dark"] {
   /* variáveis */
-  --light-color: #f2f2f2;
-  --dark-color: #121212;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --text-color-btn: #ffffff;
   --primary-color: #fe5626;
   --hover-primary-color: #ff7954;
   --secondary-color: #696969;
+  --color-icon: #fe5626;
+}
+
+html[data-theme="light"] {
+  /* variáveis */
+  --background-color: #efefef;
+  --text-color: #121212;
+  --text-color-btn: #ffffff;
+  --primary-color: #fe5626;
+  --hover-primary-color: #ff7954;
+  --secondary-color: #4e4e4e;
+  --color-icon: #121212;
 }
 
 body {
   font-family: "Jura", sans-serif;
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-body.light {
-  font-family: "Jura", sans-serif;
-  background-color: var(--light-color-color);
-  color: var(--dark-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .container {
@@ -48,12 +55,13 @@ h1 {
   color: var(--primary-color);
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
+  font-weight: 800;
 }
 
 .subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-top: 0.50rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
   opacity: 0.6;
 
   transition: opacity 500ms;
@@ -66,7 +74,7 @@ h1 {
 .local {
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 0.50rem;
+  margin-top: 0.5rem;
   color: var(--secondary-color);
   opacity: 0.8;
 }
@@ -82,14 +90,14 @@ ul li a {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color);
-  color: var(--text-light-color);
+  color: var(--text-color-btn);
   text-transform: uppercase;
   font-size: 0.875rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
   border-radius: 0.375rem;
 
-  transition: background 400ms;
+  transition: 400ms;
 }
 
 ul li a:hover {
@@ -105,11 +113,31 @@ ul li a:hover {
   font-size: 1rem;
 }
 
+#theme-toggler {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  margin-left: 1.5%;
+  top: 5%;
+
+  color: var(--secondary-color);
+  font-size: 1.75rem;
+  padding: 0.3125rem 0.4375rem;
+  transition: 0.8s;
+  border-radius: 0.375rem;
+}
+
+#theme-toggler:hover {
+  color: var(--color-icon);
+  padding: 0.3125rem 0.4375rem;
+  transition: 0.8s;
+}
+
 footer {
   font-weight: 500;
   font-size: 0.75;
-  opacity: 0.6;
 
+  opacity: 0.6;
   transition: opacity 400ms;
 }
 
