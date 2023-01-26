@@ -4,6 +4,7 @@ Esse projeto é uma página de links de contatos e foi proposto durante a **Mara
 ## :wrench: Tecnologias utilizadas
 * HMTL
 * CSS
+* JavaScript
 * GitHub Pages (deploy)
 * [Bootstrap Icons](https://icons.getbootstrap.com/)
 * [Google Font](https://fonts.google.com/)
