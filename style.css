@@ -13,6 +13,12 @@ html[data-theme="dark"] {
   --hover-primary-color: #ff7954;
   --secondary-color: #696969;
   --color-icon: #fe5626;
+  --filter-img-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(140deg)
+    brightness(105%) contrast(102%);
+  --filter-img-theme: invert(45%) sepia(14%) saturate(6964%) hue-rotate(343deg)
+    brightness(98%) contrast(105%);
+  --filter-img-location: invert(41%) sepia(0%) saturate(1091%)
+    hue-rotate(200deg) brightness(93%) contrast(74%);
 }
 
 html[data-theme="light"] {
@@ -24,6 +30,12 @@ html[data-theme="light"] {
   --hover-primary-color: #ff7954;
   --secondary-color: #4e4e4e;
   --color-icon: #121212;
+  --filter-img-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(140deg)
+    brightness(105%) contrast(102%);
+  --filter-img-theme: invert(0%) sepia(62%) saturate(13%) hue-rotate(195deg)
+    brightness(94%) contrast(86%);
+  --filter-img-location: invert(41%) sepia(0%) saturate(1091%)
+    hue-rotate(200deg) brightness(93%) contrast(74%);
 }
 
 body {
@@ -36,10 +48,6 @@ body {
   text-align: center;
   width: 18.75rem;
   margin: 1.875rem auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 img.avatar {
@@ -74,7 +82,7 @@ h1 {
 .local {
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   color: var(--secondary-color);
   opacity: 0.8;
 }
@@ -85,6 +93,7 @@ ul {
 }
 
 ul li a {
+  text-decoration: none;
   height: 3.313rem;
   display: flex;
   align-items: center;
@@ -92,7 +101,7 @@ ul li a {
   background-color: var(--primary-color);
   color: var(--text-color-btn);
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 16px;
 
   margin-bottom: 0.875rem;
   border-radius: 0.375rem;
@@ -104,43 +113,19 @@ ul li a:hover {
   background-color: var(--hover-primary-color);
 }
 
-.bi {
-  margin: 0.313rem;
-  font-size: 1.25rem;
-}
-
-.local .bi {
-  font-size: 1rem;
-}
-
-#theme-toggler {
+#icon-theme {
   cursor: pointer;
   position: absolute;
   z-index: 2;
   margin-left: 1.5%;
   top: 5%;
 
-  color: var(--secondary-color);
-  font-size: 1.75rem;
-  padding: 0.3125rem 0.4375rem;
-  transition: 0.8s;
-  border-radius: 0.375rem;
+  filter: var(--filter-img-theme);
 }
 
-#theme-toggler:hover {
-  color: var(--color-icon);
-  padding: 0.3125rem 0.4375rem;
-  transition: 0.8s;
+#icon-social {
+  margin: 0px 0.5rem 0px 0px;
+  width: 22px;
+  filter: var(--filter-img-white);
 }
 
-footer {
-  font-weight: 500;
-  font-size: 0.75;
-
-  opacity: 0.6;
-  transition: opacity 400ms;
-}
-
-footer:hover {
-  opacity: 1;
-}
