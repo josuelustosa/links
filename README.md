@@ -2,7 +2,7 @@
 Esse projeto é uma página de links de contatos e foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](https://www.rocketseat.com.br/), que ocorreu de 03 a 08 de Julho de 2022.
 
 ## :art: Design das intefarces
-![myimage-alt-tag](https://github.com/josuelustosa/links/blob/main/capa-GitHub.png)
+![myimage-alt-tag](https://github.com/josuelustosa/links/blob/main/assets/img/banner-id-visual.png)
 
 ## :wrench: Tecnologias utilizadas
 * HMTL
