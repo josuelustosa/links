@@ -6,12 +6,12 @@ themeToggler.addEventListener("click", () => {
     targetTheme = "dark";
 
     let iconTheme = document.querySelector("#icon-theme");
-    iconTheme.setAttribute("src", "/assets/icons/sun-theme.svg");
+    iconTheme.setAttribute("src", "assets/icons/sun-theme.svg");
   } else {
     targetTheme = "light";
 
     let imgTheme = document.querySelector("#icon-theme");
-    imgTheme.setAttribute("src", "/assets/icons/moon-theme.svg");
+    imgTheme.setAttribute("src", "assets/icons/moon-theme.svg");
   }
 
   document.documentElement.setAttribute("data-theme", targetTheme);
