@@ -1,7 +1,8 @@
 # :link: Página de Contatos
-Esse projeto foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](https://www.rocketseat.com.br/), que ocorreu de 03 a 08 de Julho de 2022. A partir da **[versão 2.0.0](#)** deste projeto, todos os direitos e recursos de implementação estão reservados ao autor, conforme a [MIT License](https://github.com/josuelustosa/links/blob/main/LICENSE.md).
+Esse projeto foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](https://www.rocketseat.com.br/), que ocorreu de 03 a 08 de Julho de 2022. A partir da **[versão 2.0.0](https://github.com/josuelustosa/links#v200)** deste projeto, todos os direitos e recursos de implementação estão reservados ao autor, conforme a [MIT License](https://github.com/josuelustosa/links/blob/main/LICENSE.md).
+> #### Acesse o site no ar: https://josuelustosa.github.io/links/
 
-## :art: Design das intefarces
+## :art: Interfaces de Usuário e Identidade Visual (v1.0.0)
 ![myimage-alt-tag](https://github.com/josuelustosa/links/blob/main/assets/img/banner-id-visual.png)
 
 ## :wrench: Tecnologias utilizadas
