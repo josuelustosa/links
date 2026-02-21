@@ -9,9 +9,18 @@ Esse projeto foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](h
 * :computer: HMTL, CSS e JavaScript
 *  :space_invader: Bootstrap Icons
 * :abc: Google Font
-* :rocket: GitHub Pages (deploy) - [Acessar site no Ar](https://josuelustosa.github.io/links/)
+* :rocket: GitHub Pages (deploy)
 * :art: Figma - [Acessar Design](https://www.figma.com/file/E4XYlmsqLurJ9GwlxoGF6d/P%C3%A1gina-de-Contatos-por-Josu%C3%A9-Lustosa?type=design&node-id=5725%3A2&mode=design&t=xHtXEtk9isi44hjr-1) 
 
+## :hammer_and_wrench: Principais funcionalidades
+* Centralização de contatos, redes sociais e links relevantes em uma única página.
+* Layout 100% responsivo para celular, tablet e desktop.
+* Alternância entre tema escuro (padrão) e claro.
+* Botões com animações para destaque de links prioritários.
+* E-mail com mensagem automática pré-configurada para facilitar o contato direto.
+* Foto de perfil sincronizada via API do GitHub.
+* Deploy automático e gratuito via GitHub Pages.
+* Domínio personalizado vinculado ao usuário do GitHub.
 
 ## :sparkles: Melhorias
 > ### v1.0.0
