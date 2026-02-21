@@ -27,14 +27,15 @@ Esse projeto foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](h
 - [x] Alterar tema da página com JavaScript (Dark/Light).
 - [x] Implementar tags de SEO.
 - [x] Adicionar localização.
+- [x] Implementar foto de perfil sicronizada ao GitHub.
+- [x] Ajustar mensagem automática pré-configurada de email.
 > ### v2.0.0
 - [ ] Adaptar o layout em 2 abas (tabs): Bio (Biografia) e Contatos.
-- [ ] Posicionar o botão de alterar tema no novo layout.
-- [ ] Implementar a nova estrutura de desenvolvimento:
-  - [ ] [React](https://react.dev/) - biblioteca front-end em JavaScript com o foco em criar Intefaces de Usuário (UI) em aplicações web;
-  - [ ] [TypeScript](https://www.typescriptlang.org/) - conjunto de ferramentas e formas mais eficientes de escrever código JavaScript, adicionando recursos que não estão presentes de maneira nativa na linguagem;
-  - [ ] [Next]() - framework React que facilita a indexação por mecanismos de busca, melhorando a visibilidade da aplicação na web;
-  - [ ] [Tailwind CSS]() - framework de estilo CSS de código aberto (open source) que permite criar estilos de maneira mais eficiente e rápida, sem a necessidade de escrever CSS personalizado.
+- [ ] Adaptar o botão de alterar tema no novo layout.
+- [ ] Edição dinâmica de links via JSON ou painel simplificado.
+- [ ] Geração automática de QR Code da página.
+- [ ] Compartilhamento rápido via botão “Copiar link”.
+- [ ] Reestruturação completa do projeto para um ecossistema moderno com React, Next.js, TypeScript e Tailwind CSS, elevando o padrão de manutenção, performance e escalabilidade da aplicação.
 - [ ] [DOCS] Estabelecer um código de conduta do projeto.
 - [ ] [DOCS] Adicionar diretrizes de contribuição do projeto.
 
