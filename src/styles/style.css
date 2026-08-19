@@ -51,11 +51,15 @@ body {
 }
 
 img.avatar {
-  width: 100%;
   border-radius: 50%;
   width: 11.5rem;
   height: 11.5rem;
   border: 0.25rem solid var(--primary-color);
+}
+
+.profile-media {
+  position: relative;
+  display: inline-block;
 }
 
 h1 {
@@ -87,6 +91,11 @@ h1 {
   opacity: 0.8;
 }
 
+.local img {
+  vertical-align: text-bottom;
+  filter: var(--filter-img-location);
+}
+
 ul {
   list-style: none;
   margin: 1.875rem 0;
@@ -113,20 +122,40 @@ ul li a:hover {
   background-color: var(--hover-primary-color);
 }
 
-#icon-theme {
+.theme-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
   cursor: pointer;
   position: absolute;
   z-index: 2;
-  margin-left: 1.5%;
-  top: 5%;
+  right: -2.25rem;
+  top: 0.5rem;
+  padding: 0.5rem;
+}
 
+.theme-toggle img {
+  display: block;
+  width: 1.375rem;
   filter: var(--filter-img-theme);
 }
 
-#icon-social {
-  margin: 0px 0.5rem 0px 0px;
-  width: 22px;
+.icon-social {
+  margin: 0 0.5rem 0 0;
+  width: 1.375rem;
   filter: var(--filter-img-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* #especial-link {

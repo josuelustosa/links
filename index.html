@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-BR" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Josué Lustosa | Desenvolvedor de Software</title>
 
@@ -13,44 +12,49 @@
     <meta name="author" content="Josué Lustosa" />
     <link rel="canonical" href="https://josuelustosa.github.io/links/" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Josué Lustosa | Desenvolvedor de Software" />
-    <meta property="og:description" content="Acesse meu portfólio, currículo e redes profissionais em um só lugar." />
+    <meta
+      property="og:description"
+      content="Acesse meu portfólio, currículo e redes profissionais em um só lugar."
+    />
     <meta property="og:url" content="https://josuelustosa.github.io/links/" />
-    <meta property="og:image" content="https://josuelustosa.github.io/links/assets/img/preview-open-graph.jpg" />
+    <meta
+      property="og:image"
+      content="https://josuelustosa.github.io/links/assets/img/preview-open-graph.jpg"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Josué Lustosa" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Josué Lustosa | Desenvolvedor de Software" />
-    <meta name="twitter:description" content="Portfólio, currículo e redes profissionais" />
-    <meta name="twitter:image" content="https://josuelustosa.github.io/links/assets/img/preview-open-graph.jpg" />
-    
-    <!-- Favicon -->
+    <meta
+      name="twitter:description"
+      content="Portfólio, currículo e redes profissionais"
+    />
+    <meta
+      name="twitter:image"
+      content="https://josuelustosa.github.io/links/assets/img/preview-open-graph.jpg"
+    />
+
     <link
       rel="shortcut icon"
       href="https://avatars.githubusercontent.com/u/93569079?v=4"
       type="image/x-icon"
     />
 
-    <!-- Google Font: connect and performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@500;700&display=swap" />
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-
-    <!-- CSS File -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@500;700&display=swap"
+    />
     <link rel="stylesheet" href="./src/styles/style.css" />
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -64,111 +68,126 @@
   </head>
 
   <body>
-    <div class="container">
-      <div>
-        <img
-          class="avatar"
-          src="https://avatars.githubusercontent.com/u/93569079?v=4"
-          alt="Foto de Perfil de Josué Lustosa"
-          title="Foto de Perfil de Josué Lustosa"
-        />
+    <main class="container" aria-labelledby="profile-name">
+      <header class="profile">
+        <div class="profile-media">
+          <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/93569079?v=4"
+            alt="Foto de perfil de Josué Lustosa"
+            width="184"
+            height="184"
+          />
 
-        <img
-          id="icon-theme"
-          src="assets/icons/sun-theme.svg"
-          alt="Ícone de alterar tema"
-          title="Alterar tema"
-        />
-      </div>
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Ativar tema claro"
+          >
+            <img
+              src="assets/icons/sun-theme.svg"
+              alt=""
+              data-theme-icon
+              aria-hidden="true"
+            />
+          </button>
+        </div>
 
-      <h1>Josué Lustosa</h1>
-      <p class="subtitle">&lt;Desenvolvedor de Software&sol;&gt;</p>
-      <p class="local">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-        </svg>
-      </i>Manaus, Brasil</p>
+        <h1 id="profile-name">Josué Lustosa</h1>
+        <p class="subtitle">&lt;Desenvolvedor de Software&sol;&gt;</p>
+        <p class="local">
+          <img
+            src="assets/icons/location.svg"
+            alt=""
+            width="16"
+            height="16"
+            aria-hidden="true"
+          />
+          Manaus, Brasil
+        </p>
+      </header>
 
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/josue-lustosa/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./assets/icons/linkedin.svg"
-              id="icon-social"
-              alt="Logo LinkedIn"
-            />LinkedIn</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/josuelustosa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./assets/icons/github.svg"
-              id="icon-social"
-              alt="Logo GitHub"
-            />
-            GitHub</a
-          >
-        </li>
-        <li>
-          <a
-            href="mailto:josuelustosa.job@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./assets/icons/email.svg"
-              id="icon-social"
-              alt="Ícone Email"
-            />
-            Email</a
-          >
-        </li>
-        <li>
-          <a
-            href="./assets/docs/Curriculo-Josue-Lustosa-Desenvolvedor.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./assets/icons/file-pdf.svg"
-              id="icon-social"
-              alt="Ícone PDF - Currículo"
-            />
-            Currículo Atualizado</a
-          >
-        </li>
-        <li>
-          <a
-            id="especial-link"
-            class="link"
-            href="mailto:josuelustosa.job@gmail.com?subject=Obter%20minha%20p%C3%A1gina%20personalizada%20de%20links&body=Ol%C3%A1,%20Josu%C3%A9%20Lustosa,%0A%0ATive%20acesso%20%C3%A0%20sua%20p%C3%A1gina%20exclusiva%20de%20links%20e%20contatos%20para%20redes%20sociais%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20como%20obter%20uma%20vers%C3%A3o%20personalizada%20para%20mim.%0A%0APoderia,%20por%20gentileza,%20orientar-me%20sobre%20os%20pr%C3%B3ximos%20passos%20para%20darmos%20continuidade?%0A%0AAtenciosamente,"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Obtenha sua página de Links</a
-          >
-        </li>
-      </ul>
+      <section class="links-section" aria-labelledby="links-heading">
+        <h2 id="links-heading" class="visually-hidden">Links</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/josue-lustosa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="icon-social"
+                src="./assets/icons/linkedin.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/josuelustosa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="icon-social"
+                src="./assets/icons/github.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="mailto:josuelustosa.job@gmail.com">
+              <img
+                class="icon-social"
+                src="./assets/icons/email.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              E-mail
+            </a>
+          </li>
+          <li>
+            <a
+              href="./assets/docs/Curriculo-Josue-Lustosa-Desenvolvedor.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="icon-social"
+                src="./assets/icons/file-pdf.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              Currículo atualizado
+            </a>
+          </li>
+          <li>
+            <a
+              class="link--featured"
+              href="mailto:josuelustosa.job@gmail.com?subject=Obter%20minha%20p%C3%A1gina%20personalizada%20de%20links&body=Ol%C3%A1%2C%20Josu%C3%A9%20Lustosa%2C%0A%0ATive%20acesso%20%C3%A0%20sua%20p%C3%A1gina%20exclusiva%20de%20links%20e%20contatos%20para%20redes%20sociais%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20como%20obter%20uma%20vers%C3%A3o%20personalizada%20para%20mim.%0A%0APoderia%2C%20por%20gentileza%2C%20orientar-me%20sobre%20os%20pr%C3%B3ximos%20passos%20para%20darmos%20continuidade%3F%0A%0AAtenciosamente%2C"
+            >
+              Obtenha sua página de links
+            </a>
+          </li>
+        </ul>
+      </section>
 
       <footer>
         <img
           src="./assets/img/logo-josue-lustosa.png"
           width="200"
+          height="73"
           alt="Logo Josué Lustosa"
-          title="Logo Josué Lustosa"
-        >
+        />
       </footer>
-    </div>
-    
-    <script src="./src/js/theme.js"></script>
-    <script src="./src/js/animation.js"></script>
+    </main>
+
+    <script type="module" src="./src/js/app.js"></script>
   </body>
 </html>

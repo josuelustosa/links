@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "name": "Josué Lustosa",
+    "role": "Desenvolvedor de Software",
+    "location": "Manaus, Brasil",
+    "avatar": "https://avatars.githubusercontent.com/u/93569079?v=4",
+    "bio": "Desenvolvedor de software focado em experiências digitais claras, acessíveis e bem construídas.",
+    "stacks": ["React", "TypeScript", "React Native", "Front-end"]
+  },
+  "links": [
+    {
+      "id": "linkedin",
+      "title": "LinkedIn",
+      "description": "Perfil profissional e trajetória.",
+      "href": "https://www.linkedin.com/in/josue-lustosa/",
+      "icon": "linkedin",
+      "featured": false,
+      "visible": true,
+      "newTab": true
+    },
+    {
+      "id": "github",
+      "title": "GitHub",
+      "description": "Projetos e contribuições de código.",
+      "href": "https://github.com/josuelustosa",
+      "icon": "github",
+      "featured": false,
+      "visible": true,
+      "newTab": true
+    },
+    {
+      "id": "email",
+      "title": "E-mail",
+      "description": "Canal direto para contato profissional.",
+      "href": "mailto:josuelustosa.job@gmail.com",
+      "icon": "email",
+      "featured": false,
+      "visible": true,
+      "newTab": false
+    },
+    {
+      "id": "curriculo",
+      "title": "Currículo atualizado",
+      "description": "Currículo de Josué Lustosa em PDF.",
+      "href": "./assets/docs/Curriculo-Josue-Lustosa-Desenvolvedor.pdf",
+      "icon": "file-pdf",
+      "featured": false,
+      "visible": true,
+      "newTab": true
+    },
+    {
+      "id": "pagina-personalizada",
+      "title": "Obtenha sua página de links",
+      "description": "Solicite informações sobre uma página de links personalizada.",
+      "href": "mailto:josuelustosa.job@gmail.com?subject=Obter%20minha%20p%C3%A1gina%20personalizada%20de%20links&body=Ol%C3%A1%2C%20Josu%C3%A9%20Lustosa%2C%0A%0ATive%20acesso%20%C3%A0%20sua%20p%C3%A1gina%20exclusiva%20de%20links%20e%20contatos%20para%20redes%20sociais%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20como%20obter%20uma%20vers%C3%A3o%20personalizada%20para%20mim.%0A%0APoderia%2C%20por%20gentileza%2C%20orientar-me%20sobre%20os%20pr%C3%B3ximos%20passos%20para%20darmos%20continuidade%3F%0A%0AAtenciosamente%2C",
+      "icon": "email",
+      "featured": true,
+      "visible": true,
+      "newTab": false
+    }
+  ]
+}

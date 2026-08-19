@@ -1,22 +1,34 @@
-let themeToggler = document.getElementById("icon-theme");
-themeToggler.addEventListener("click", () => {
-  let targetTheme;
-  let currentTheme = document.documentElement.getAttribute("data-theme");
-  if (currentTheme === "light") {
-    targetTheme = "dark";
+const themes = {
+  dark: {
+    icon: "assets/icons/sun-theme.svg",
+    label: "Ativar tema claro",
+  },
+  light: {
+    icon: "assets/icons/moon-theme.svg",
+    label: "Ativar tema escuro",
+  },
+};
 
-    let iconTheme = document.querySelector("#icon-theme");
-    iconTheme.setAttribute("src", "assets/icons/sun-theme.svg");
-  } else {
-    targetTheme = "light";
+function applyTheme(theme, button, icon) {
+  document.documentElement.dataset.theme = theme;
+  button.setAttribute("aria-label", themes[theme].label);
+  icon.src = themes[theme].icon;
+}
 
-    let imgTheme = document.querySelector("#icon-theme");
-    imgTheme.setAttribute("src", "assets/icons/moon-theme.svg");
+export function initTheme() {
+  const button = document.querySelector("[data-theme-toggle]");
+  const icon = document.querySelector("[data-theme-icon]");
+
+  if (!button || !icon) {
+    return;
   }
 
-  document.documentElement.setAttribute("data-theme", targetTheme);
-});
+  applyTheme(document.documentElement.dataset.theme || "dark", button, icon);
 
-let browserTheme = window.matchMedia("(prefers-color-scheme: light)").matches
-  ? "light"
-  : "dark";
+  button.addEventListener("click", () => {
+    const currentTheme = document.documentElement.dataset.theme;
+    const nextTheme = currentTheme === "light" ? "dark" : "light";
+
+    applyTheme(nextTheme, button, icon);
+  });
+}
