@@ -3,9 +3,24 @@
     "name": "Josué Lustosa",
     "role": "Desenvolvedor de Software",
     "location": "Manaus, Brasil",
-    "avatar": "https://avatars.githubusercontent.com/u/93569079?v=4",
-    "bio": "Desenvolvedor de software focado em experiências digitais claras, acessíveis e bem construídas.",
-    "stacks": ["React", "TypeScript", "React Native", "Front-end"]
+    "avatar": "assets/img/perfil-josue-lustosa.webp",
+    "bio": "Bacharel em Sistemas de Informação (2021), com +4 anos de experiência no desenvolvimento de softwares escaláveis, modernos e centrados na experiência do usuário. Fora do código, sou um jovem comum apaixonado por games e tecnologia, e fascinado pela [minha] Amazônia.",
+    "technologies": [
+      { "id": "javascript", "label": "JavaScript", "icon": "javascript" },
+      { "id": "typescript", "label": "TypeScript", "icon": "typescript" },
+      { "id": "react", "label": "React", "icon": "react" },
+      { "id": "nextjs", "label": "Next", "icon": "nextjs" },
+      { "id": "vue", "label": "Vue", "icon": "vue" },
+      { "id": "figma", "label": "Figma", "icon": "figma" },
+      { "id": "nodejs", "label": "Node", "icon": "nodejs" },
+      { "id": "docker", "label": "Docker", "icon": "docker" },
+      { "id": "mysql", "label": "MySQL", "icon": "mysql" },
+      { "id": "git", "label": "Git", "icon": "git" },
+      { "id": "android", "label": "Android", "icon": "android" },
+      { "id": "ios", "label": "iOS", "icon": "ios" },
+      { "id": "openai", "label": "OpenAI", "icon": "openai" },
+      { "id": "claude-code", "label": "Claude Code", "icon": "claude-code" }
+    ]
   },
   "links": [
     {
