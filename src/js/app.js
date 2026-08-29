@@ -1,5 +1,6 @@
 import { renderAbout } from "./about.js";
 import { renderLinks } from "./links.js";
+import { initTabs } from "./tabs.js";
 import { initTheme } from "./theme.js";
 
 function renderProfile(profile) {
@@ -38,6 +39,12 @@ async function loadSiteData() {
 
 async function initApp() {
   initTheme();
+
+  const tabList = document.querySelector('[role="tablist"]');
+
+  if (tabList) {
+    initTabs(tabList);
+  }
 
   try {
     const site = await loadSiteData();

@@ -8,7 +8,10 @@ export function initTabs(tabList) {
 
       item.setAttribute("aria-selected", String(selected));
       item.tabIndex = selected ? 0 : -1;
-      panel.hidden = !selected;
+
+      if (panel) {
+        panel.hidden = !selected;
+      }
     });
   }
 
