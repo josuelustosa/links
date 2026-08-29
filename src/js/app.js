@@ -1,5 +1,6 @@
 import { renderAbout } from "./about.js";
 import { renderLinks } from "./links.js";
+import { initShare } from "./share.js";
 import { initTabs } from "./tabs.js";
 import { initTheme } from "./theme.js";
 
@@ -39,6 +40,7 @@ async function loadSiteData() {
 
 async function initApp() {
   initTheme();
+  initShare();
 
   const tabList = document.querySelector('[role="tablist"]');
 
