@@ -51,7 +51,7 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jura:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="./src/styles/style.css" />
 
@@ -68,124 +68,158 @@
   </head>
 
   <body>
-    <main class="container" aria-labelledby="profile-name">
+    <main class="page" aria-labelledby="profile-name">
       <header class="profile">
         <div class="profile-media">
-          <img
-            class="avatar"
-            src="https://avatars.githubusercontent.com/u/93569079?v=4"
-            alt="Foto de perfil de Josué Lustosa"
-            width="184"
-            height="184"
-          />
-
-          <button
-            class="theme-toggle"
-            type="button"
-            data-theme-toggle
-            aria-label="Ativar tema claro"
-          >
+          <div class="avatar-frame">
             <img
-              src="assets/icons/sun-theme.svg"
-              alt=""
-              data-theme-icon
-              aria-hidden="true"
+              class="avatar"
+              src="assets/img/perfil-josue-lustosa.webp"
+              alt="Foto de perfil de Josué Lustosa"
+              width="138"
+              height="138"
+              decoding="async"
+              fetchpriority="high"
+              data-profile-avatar
             />
-          </button>
+          </div>
+
+          <div class="profile-actions">
+            <div class="share-control">
+              <button
+                class="profile-action"
+                type="button"
+                data-share-button
+                aria-label="Copiar link da página"
+                aria-describedby="share-feedback"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/icons/phosphor/regular/share-network.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                />
+              </button>
+
+              <div
+                id="share-feedback"
+                class="share-feedback"
+                role="status"
+                aria-live="polite"
+                data-share-feedback
+                hidden
+              >
+                <strong data-share-message></strong>
+                <span data-share-url></span>
+              </div>
+            </div>
+
+            <button
+              class="profile-action"
+              type="button"
+              data-theme-toggle
+              aria-label="Ativar tema claro"
+              aria-pressed="false"
+            >
+              <img
+                src="assets/icons/phosphor/regular/sun.svg"
+                alt=""
+                width="20"
+                height="20"
+                data-theme-icon
+                aria-hidden="true"
+              />
+            </button>
+          </div>
         </div>
 
-        <h1 id="profile-name">Josué Lustosa</h1>
-        <p class="subtitle">&lt;Desenvolvedor de Software&sol;&gt;</p>
-        <p class="local">
-          <img
-            src="assets/icons/location.svg"
-            alt=""
-            width="16"
-            height="16"
-            aria-hidden="true"
-          />
-          Manaus, Brasil
-        </p>
+        <div class="profile-info">
+          <h1 id="profile-name" data-profile-name>Josué Lustosa</h1>
+          <p class="profile-role" data-profile-role>Desenvolvedor de Software</p>
+          <p class="profile-location">
+            <img
+              src="assets/icons/phosphor/regular/map-pin.svg"
+              alt=""
+              width="16"
+              height="16"
+              aria-hidden="true"
+            />
+            <span data-profile-location>Manaus, Brasil</span>
+          </p>
+        </div>
       </header>
 
-      <section class="links-section" aria-labelledby="links-heading">
-        <h2 id="links-heading" class="visually-hidden">Links</h2>
-        <ul class="link-list">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/josue-lustosa/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="icon-social"
-                src="./assets/icons/linkedin.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/josuelustosa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="icon-social"
-                src="./assets/icons/github.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="mailto:josuelustosa.job@gmail.com">
-              <img
-                class="icon-social"
-                src="./assets/icons/email.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              E-mail
-            </a>
-          </li>
-          <li>
-            <a
-              href="./assets/docs/Curriculo-Josue-Lustosa-Desenvolvedor.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="icon-social"
-                src="./assets/icons/file-pdf.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              Currículo atualizado
-            </a>
-          </li>
-          <li>
-            <a
-              class="link--featured"
-              href="mailto:josuelustosa.job@gmail.com?subject=Obter%20minha%20p%C3%A1gina%20personalizada%20de%20links&body=Ol%C3%A1%2C%20Josu%C3%A9%20Lustosa%2C%0A%0ATive%20acesso%20%C3%A0%20sua%20p%C3%A1gina%20exclusiva%20de%20links%20e%20contatos%20para%20redes%20sociais%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20como%20obter%20uma%20vers%C3%A3o%20personalizada%20para%20mim.%0A%0APoderia%2C%20por%20gentileza%2C%20orientar-me%20sobre%20os%20pr%C3%B3ximos%20passos%20para%20darmos%20continuidade%3F%0A%0AAtenciosamente%2C"
-            >
-              Obtenha sua página de links
-            </a>
-          </li>
-        </ul>
+      <div class="tabs" role="tablist" aria-label="Conteúdo do perfil">
+        <button
+          class="tab"
+          id="tab-links"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-links"
+          tabindex="-1"
+        >
+          Links
+        </button>
+        <button
+          class="tab"
+          id="tab-about"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-about"
+        >
+          Sobre
+        </button>
+      </div>
+
+      <section
+        id="panel-links"
+        class="tab-panel links-section"
+        role="tabpanel"
+        aria-labelledby="tab-links"
+        hidden
+      >
+        <h2 class="visually-hidden">Links</h2>
+        <ul class="link-list" data-link-list></ul>
       </section>
 
-      <footer>
+      <section
+        id="panel-about"
+        class="tab-panel about-content"
+        role="tabpanel"
+        aria-labelledby="tab-about"
+      >
+        <section class="about-intro" aria-labelledby="about-heading">
+          <h2 id="about-heading" class="eyebrow">
+            <span aria-hidden="true"></span>Um pouco sobre mim
+          </h2>
+          <p class="about-bio" data-profile-bio></p>
+        </section>
+
+        <section class="technology-section" aria-labelledby="technology-heading">
+          <h2 id="technology-heading" class="eyebrow">
+            <span aria-hidden="true"></span>Ferramentas &amp; tecnologias
+          </h2>
+          <ul class="technology-list" data-technology-list></ul>
+        </section>
+      </section>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <footer class="footer-brand">
         <img
-          src="./assets/img/logo-josue-lustosa.png"
-          width="200"
-          height="73"
-          alt="Logo Josué Lustosa"
+          class="footer-logo"
+          src="assets/img/logo-josue-lustosa.png"
+          alt="Josué Lustosa"
+          width="145"
+          height="49"
         />
       </footer>
+
+      <p class="visually-hidden" role="status" aria-live="polite" data-app-status></p>
     </main>
 
     <script type="module" src="./src/js/app.js"></script>
