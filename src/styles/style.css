@@ -153,11 +153,11 @@ html[data-theme="light"] .profile-action[data-share-button] img {
 .share-feedback {
   position: fixed;
   z-index: 10;
-  inset-block-start: 50%;
   inset-inline-start: 50%;
+  inset-block-end: max(20px, calc(16px + env(safe-area-inset-bottom)));
   display: grid;
   gap: 4px;
-  inline-size: min(310px, calc(100vw - 48px));
+  inline-size: min(360px, calc(100% - 32px));
   padding: 16px;
   color: var(--text);
   background: var(--surface);
@@ -169,7 +169,7 @@ html[data-theme="light"] .profile-action[data-share-button] img {
   line-height: 16px;
   pointer-events: none;
   text-align: center;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .share-feedback[hidden] {
