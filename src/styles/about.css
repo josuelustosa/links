@@ -1,0 +1,132 @@
+.about-content,
+.about-intro,
+.technology-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-content {
+  gap: 40px;
+}
+
+.about-intro {
+  gap: 8px;
+}
+
+.technology-section {
+  gap: 16px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--accent-soft);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  inline-size: 24px;
+  block-size: 2px;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.about-bio {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.technology-tag {
+  display: grid;
+  place-items: center;
+  position: relative;
+  inline-size: 40px;
+  block-size: 40px;
+  background: var(--technology-surface);
+  border: 1px solid var(--technology-border);
+  border-radius: 12px;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.technology-icon {
+  display: block;
+  inline-size: 20px;
+  block-size: 20px;
+  background: var(--accent);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.technology-tag[data-technology="docker"] .technology-icon,
+.technology-tag[data-technology="nodejs"] .technology-icon {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.technology-tag[data-technology="mysql"] .technology-icon {
+  inline-size: 26px;
+  block-size: 26px;
+}
+
+.technology-tag::after {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: calc(100% + 8px);
+  inset-inline-start: 50%;
+  padding: 5px 7px;
+  color: var(--strong);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 14%);
+  content: attr(title);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -3px);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.technology-tag:hover {
+  z-index: 1;
+  background: var(--technology-hover-surface);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.technology-tag:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
