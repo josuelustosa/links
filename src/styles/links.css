@@ -1,62 +1,257 @@
 .link-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  gap: 16px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.links-section .link-list {
+.link-list__item {
+  min-inline-size: 0;
+}
+
+.link-card {
   display: grid;
-  gap: 12px;
-}
-
-.link-list a {
-  display: flex;
+  grid-template-columns: 40px minmax(0, 1fr) 24px;
   align-items: center;
-  justify-content: center;
-  min-block-size: 52px;
-  padding: 12px 16px;
+  gap: 16px;
+  min-block-size: 68px;
+  padding: 12px 20px 12px 14px;
   color: var(--strong);
-  background: var(--accent);
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-}
-
-.link-list a:not(.link--featured) {
-  color: var(--text);
   background: var(--surface);
   border: 1px solid var(--surface-border);
-}
-
-.icon-social {
-  inline-size: 20px;
-  block-size: 20px;
-  margin-inline-end: 8px;
-  filter: brightness(0) invert(1);
-}
-
-.link-list a:not(.link--featured) .icon-social {
-  filter: none;
-}
-
-.link-list a:hover,
-.link-list a:focus-visible {
-  outline: 2px solid var(--focus-ring);
-  outline-offset: 2px;
-}
-
-.link-list a {
+  border-radius: 16px;
+  text-decoration: none;
   transition:
     background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.link-card__icon,
+.link-card__icon-glyph,
+.link-card__indicator-icon,
+.link-card__action-icon {
+  display: block;
+  background: currentcolor;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.link-card__icon {
+  display: grid;
+  place-items: center;
+  inline-size: 40px;
+  block-size: 40px;
+  background-color: var(--link-icon-surface);
+  border-radius: 999px;
+}
+
+.link-card__icon-glyph {
+  inline-size: 20px;
+  block-size: 20px;
+  color: var(--link-icon-foreground);
+}
+
+.link-card__content {
+  display: grid;
+  gap: 2px;
+  min-inline-size: 0;
+}
+
+.link-card__title,
+.link-card__description {
+  overflow-wrap: anywhere;
+}
+
+.link-card__title {
+  color: var(--strong);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.link-card__description {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.link-card__indicator {
+  display: grid;
+  place-items: center;
+  inline-size: 24px;
+  block-size: 24px;
+  color: var(--muted);
+}
+
+.link-card__indicator-icon {
+  inline-size: 22px;
+  block-size: 22px;
+}
+
+.link-card--contact {
+  position: relative;
+  gap: 12px;
+  overflow: hidden;
+  color: var(--link-contact-text);
+  background:
+    radial-gradient(circle at 100% 0%, rgb(254 86 38 / 10%), transparent 46%),
+    linear-gradient(115deg, var(--link-contact-start), var(--link-contact-end));
+  border-color: var(--link-contact-border);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 7%),
+    0 12px 28px var(--link-contact-shadow);
+}
+
+.link-card--contact > * {
+  position: relative;
+  z-index: 1;
+}
+
+.link-card--contact .link-card__icon {
+  color: var(--link-icon-foreground);
+  background-color: var(--link-contact-icon-surface);
+  border: 1px solid var(--link-contact-icon-border);
+  box-shadow: 0 7px 16px rgb(254 86 38 / 22%);
+}
+
+.link-card--contact .link-card__title {
+  color: var(--link-contact-text);
+}
+
+.link-card--contact .link-card__description {
+  color: var(--link-contact-muted);
+  font-size: 13px;
+  letter-spacing: -0.12px;
+}
+
+.link-card--contact .link-card__indicator {
+  inline-size: 24px;
+  block-size: 24px;
+  color: var(--accent);
+  transition:
     color 160ms ease,
     transform 160ms ease;
 }
 
-.link-list a:hover {
+.link-card--contact .link-card__indicator-icon {
+  inline-size: 22px;
+  block-size: 22px;
+}
+
+.link-card--cta {
+  grid-template-columns: 40px minmax(0, 1fr);
+  align-items: start;
+  min-block-size: 0;
+  padding: 20px 20px 20px 14px;
+  background: var(--link-cta-surface);
+  border-color: var(--link-cta-border);
+}
+
+.link-card--cta .link-card__content {
+  gap: 4px;
+}
+
+.link-card--cta .link-card__icon {
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--link-cta-border);
+}
+
+.link-card--cta .link-card__icon-glyph {
+  color: var(--accent);
+}
+
+.link-card--cta .link-card__title {
+  font-size: 17px;
+}
+
+.link-card--cta .link-card__indicator {
+  grid-column: 2;
+  justify-self: start;
+  inline-size: auto;
+  block-size: auto;
+  margin-block-start: 14px;
+}
+
+.link-card__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-block-size: 34px;
+  padding: 6px 12px;
+  color: var(--accent);
+  background: var(--link-cta-action-surface);
+  border: 1px solid var(--link-cta-action-border);
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.link-card__action-label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.link-card__action-icon {
+  inline-size: 16px;
+  block-size: 16px;
+}
+
+a.link-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 26px rgb(0 0 0 / 18%);
   transform: translateY(-1px);
+}
+
+a.link-card--contact:hover {
+  border-color: var(--accent);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 10%),
+    0 16px 32px rgb(254 86 38 / 18%);
+}
+
+a.link-card--contact:hover .link-card__indicator {
+  transform: translateX(2px);
+}
+
+a.link-card:focus-visible,
+.link-card__action:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.link-card__action:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 8px 18px rgb(254 86 38 / 18%);
+  color: var(--active-tab-text);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 359px) {
+  .link-card {
+    gap: 12px;
+    padding-inline: 12px;
+  }
+
+  .link-card__title {
+    font-size: 17px;
+  }
+
+  .link-card--cta {
+    padding-block: 16px;
+  }
 }

@@ -11,8 +11,22 @@
   --text: #c2c3c8;
   --muted: #96979d;
   --strong: #f7f7f8;
-  --active-tab-text: #121212;
+  --active-tab-text: #f7f7f8;
   --focus-ring: var(--accent);
+  --link-contact-start: #211a18;
+  --link-contact-end: #181719;
+  --link-contact-text: var(--strong);
+  --link-contact-muted: var(--text);
+  --link-contact-border: rgb(254 86 38 / 48%);
+  --link-contact-icon-surface: var(--accent);
+  --link-contact-icon-border: rgb(255 255 255 / 12%);
+  --link-contact-shadow: rgb(0 0 0 / 28%);
+  --link-icon-surface: var(--accent);
+  --link-icon-foreground: #ffffff;
+  --link-cta-surface: rgb(254 86 38 / 4%);
+  --link-cta-border: rgb(254 86 38 / 58%);
+  --link-cta-action-surface: rgb(254 86 38 / 10%);
+  --link-cta-action-border: rgb(254 86 38 / 52%);
 }
 
 html[data-theme="light"] {
@@ -27,4 +41,18 @@ html[data-theme="light"] {
   --muted: #5b5c63;
   --strong: #121212;
   --focus-ring: var(--accent);
+  --link-contact-start: #ffffff;
+  --link-contact-end: #fff2ed;
+  --link-contact-text: var(--strong);
+  --link-contact-muted: var(--muted);
+  --link-contact-border: rgb(254 86 38 / 45%);
+  --link-contact-icon-surface: var(--accent);
+  --link-contact-icon-border: rgb(254 86 38 / 16%);
+  --link-contact-shadow: rgb(127 47 24 / 14%);
+  --link-icon-surface: var(--accent);
+  --link-icon-foreground: #ffffff;
+  --link-cta-surface: #fffaf8;
+  --link-cta-border: rgb(254 86 38 / 64%);
+  --link-cta-action-surface: #fff4ef;
+  --link-cta-action-border: rgb(254 86 38 / 58%);
 }
