@@ -141,7 +141,12 @@ Mover para ela:
 │   └── docs/
 ├── src/
 │   ├── styles/
-│   │   └── style.css
+│   │   ├── index.css
+│   │   ├── tokens.css
+│   │   ├── base.css
+│   │   ├── shell.css
+│   │   ├── about.css
+│   │   └── links.css
 │   └── js/
 │       ├── app.js
 │       ├── links.js
@@ -154,6 +159,48 @@ Mover para ela:
 ├── NOTICE.md
 └── CHANGELOG.md
 ```
+
+### Organização CSS
+
+A V2 usará folhas de estilo por responsabilidade para impedir que o CSS cresça
+em um único arquivo e para preservar a fronteira entre as tabs.
+
+- `index.css`: ponto de entrada referenciado por `index.html`; importa os
+  demais arquivos em ordem explícita. Não contém regras visuais.
+- `tokens.css`: design tokens globais, temas e custom properties em `:root`.
+- `base.css`: reset, elementos HTML, tipografia base, acessibilidade global e
+  preferências de movimento reduzido.
+- `shell.css`: composição compartilhada fora dos painéis — página, perfil,
+  avatar, ações, feedback de compartilhamento, tabs, divisor e rodapé.
+- `about.css`: bio, tecnologias e demais regras exclusivas da aba Sobre.
+- `links.css`: lista de links, variantes de card, CTA e regras exclusivas da
+  aba Links.
+
+O `index.css` fixa a ordem de precedência pela ordem dos imports:
+
+```css
+@import url("./tokens.css");
+@import url("./base.css");
+@import url("./shell.css");
+@import url("./about.css");
+@import url("./links.css");
+```
+
+A refatoração deve ocorrer antes do refinamento visual da aba Links, em um
+commit próprio (`refactor: split V2 styles by responsibility`). Ela move regras
+sem alterar seletores, tokens, ordem visual ou comportamento. Cada módulo é
+responsável pelos próprios breakpoints e estados de interação; regras globais
+ou compartilhadas não devem ser adicionadas às folhas de uma tab.
+
+Não devem ser usadas cascade layers nesta etapa: a separação é uma refatoração
+semântica do CSS existente e a ordem normal da cascata preserva corretamente a
+especificidade entre regras compartilhadas e regras de cada tab. O `base.css`
+também preserva o comportamento nativo de qualquer elemento com `[hidden]`.
+
+Como o projeto permanece sem etapa de build, a validação inclui verificar o
+waterfall de CSS e o Lighthouse após a divisão. Se os imports apresentarem
+impacto mensurável, a estratégia de carregamento deverá ser revista sem voltar
+a concentrar regras de componentes em um único arquivo.
 
 ### Interface
 
@@ -287,6 +334,8 @@ Adicionar ao roadmap:
 - Testes em 320px, 360px, 390px, 768px, 1024px e desktop amplo.
 - Tabs, tema e cópia de link funcionando.
 - Conteúdo alterável somente pelo JSON.
+- CSS modularizado por tokens, base, shell e regras de cada tab, sem regressão
+  visual ou funcional.
 - V1 preservada por milestone fechada e tag.
 - `dev` usada durante toda a implementação.
 - `main` recebe apenas a versão validada.

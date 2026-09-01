@@ -60,7 +60,9 @@ explícitas e prioridade de carregamento.
 ## Arquivos envolvidos
 
 - `index.html`: estrutura semântica e pontos de montagem.
-- `src/styles/style.css`: tokens, layout e responsividade.
+- `src/styles/index.css`, `tokens.css`, `base.css`, `shell.css` e
+  `about.css`: entrada, tokens, layout compartilhado e regras exclusivas da
+  aba Sobre.
 - `data/site.json`: bio e tecnologias.
 - `src/js/app.js`: carregamento dos dados e inicialização.
 - `src/js/about.js`: renderização segura do conteúdo Sobre.
