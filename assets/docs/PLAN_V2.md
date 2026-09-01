@@ -204,7 +204,8 @@ a concentrar regras de componentes em um único arquivo.
 
 ### Interface
 
-- Coluna central com `max-width` entre `600px` e `640px`.
+- Coluna central com `width: min(100%, 390px)`; os `24px` de padding lateral
+  preservam o conteúdo em `342px` no viewport de referência.
 - Mesma ordem de conteúdo em qualquer breakpoint.
 - Bloco de perfil sempre acima das tabs.
 - Botões flutuantes ancorados ao contêiner do perfil, nunca à viewport.
