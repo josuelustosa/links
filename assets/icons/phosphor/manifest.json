@@ -1,0 +1,42 @@
+{
+  "source": "https://github.com/phosphor-icons/core",
+  "version": "2.1.1",
+  "license": "MIT",
+  "icons": [
+    {
+      "name": "envelope",
+      "weight": "regular",
+      "usedBy": "Links contact card"
+    },
+    {
+      "name": "linkedin-logo",
+      "weight": "regular",
+      "usedBy": "Links default card"
+    },
+    {
+      "name": "github-logo",
+      "weight": "regular",
+      "usedBy": "Links default card"
+    },
+    {
+      "name": "file-text",
+      "weight": "regular",
+      "usedBy": "Links default card"
+    },
+    {
+      "name": "globe",
+      "weight": "regular",
+      "usedBy": "Links CTA card"
+    },
+    {
+      "name": "arrow-right",
+      "weight": "regular",
+      "usedBy": "Links contact card and CTA action"
+    },
+    {
+      "name": "arrow-square-out",
+      "weight": "regular",
+      "usedBy": "Links external-link indicator"
+    }
+  ]
+}
