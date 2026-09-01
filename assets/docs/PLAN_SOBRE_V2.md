@@ -3,7 +3,8 @@
 ## Objetivo
 
 Implementar o frame `V3 / Mobile 390 / Sobre / Dark` no projeto estático atual,
-mantendo HTML, CSS e JavaScript puros. A aba **Sobre** será o estado inicial.
+mantendo HTML, CSS e JavaScript puros. A aba **Links** será o estado inicial;
+a aba **Sobre** permanece disponível pela navegação em tabs.
 
 ## Referência visual
 
@@ -15,7 +16,7 @@ mantendo HTML, CSS e JavaScript puros. A aba **Sobre** será o estado inicial.
 - Fonte: Jura nos pesos 400, 500, 600 e 700.
 - Avatar: imagem de `138 × 138px` dentro de um aro de `152 × 152px`; ações
   circulares: `44 × 44px`.
-- Tabs: `342 × 56px`; a aba Sobre inicia ativa.
+- Tabs: `342 × 56px`; a aba Links inicia ativa.
 - Conteúdo: bio, catorze tags de tecnologia de `40 × 40px`, divisor e
   assinatura.
 
@@ -73,5 +74,5 @@ explícitas e prioridade de carregamento.
 - Tabs acessíveis por clique, ArrowLeft, ArrowRight, Home e End.
 - Botões de compartilhar e tema com área mínima de 44px e feedback acessível.
 - Catorze tecnologias com nomes acessíveis e SVGs locais.
-- Sem requisições de ícones em runtime.
+- Sem requisições remotas de ícones em runtime; usar somente SVGs locais.
 - Tema e conteúdo de links continuam funcionais.
