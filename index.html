@@ -164,9 +164,8 @@
           id="tab-links"
           type="button"
           role="tab"
-          aria-selected="false"
+          aria-selected="true"
           aria-controls="panel-links"
-          tabindex="-1"
         >
           Links
         </button>
@@ -175,8 +174,9 @@
           id="tab-about"
           type="button"
           role="tab"
-          aria-selected="true"
+          aria-selected="false"
           aria-controls="panel-about"
+          tabindex="-1"
         >
           Sobre
         </button>
@@ -187,7 +187,6 @@
         class="tab-panel links-section"
         role="tabpanel"
         aria-labelledby="tab-links"
-        hidden
       >
         <h2 class="visually-hidden">Links</h2>
         <ul class="link-list" data-link-list></ul>
@@ -198,6 +197,7 @@
         class="tab-panel about-content"
         role="tabpanel"
         aria-labelledby="tab-about"
+        hidden
       >
         <section class="about-intro" aria-labelledby="about-heading">
           <h2 id="about-heading" class="eyebrow">
