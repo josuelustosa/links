@@ -1,43 +1,63 @@
-# :link: Página de Contatos
-Esse projeto foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](https://www.rocketseat.com.br/), que ocorreu de 03 a 08 de Julho de 2022. A partir da **[versão 2.0.0](https://github.com/josuelustosa/links#v200)** deste projeto, todos os direitos e recursos de implementação estão reservados ao autor, conforme a [MIT License](https://github.com/josuelustosa/links/blob/main/LICENSE.md).
-> #### Acesse o site no ar: https://josuelustosa.github.io/links/
+# Página de Links — Josué Lustosa
 
-## :art: Interfaces de Usuário e Identidade Visual (v1.0.0)
-![myimage-alt-tag](https://github.com/josuelustosa/links/blob/main/assets/img/banner-id-visual.png)
+Página pessoal estática para centralizar contatos, redes profissionais,
+currículo e informações sobre a trajetória de Josué Lustosa, Desenvolvedor de
+Software.
 
-## :wrench: Tecnologias utilizadas
-* :computer: HMTL, CSS e JavaScript
-*  :space_invader: Bootstrap Icons
-* :abc: Google Font
-* :rocket: GitHub Pages (deploy)
-* :art: Figma - [Acessar Design](https://www.figma.com/file/E4XYlmsqLurJ9GwlxoGF6d/P%C3%A1gina-de-Contatos-por-Josu%C3%A9-Lustosa?type=design&node-id=5725%3A2&mode=design&t=xHtXEtk9isi44hjr-1) 
+**Versão V2 em desenvolvimento na branch `dev`.** A publicação estável permanece
+disponível em [josuelustosa.github.io/links](https://josuelustosa.github.io/links/).
 
-## :hammer_and_wrench: Principais funcionalidades
-* Centralização de contatos, redes sociais e links relevantes em uma única página.
-* Layout 100% responsivo para celular, tablet e desktop.
-* Alternância entre tema escuro (padrão) e claro.
-* Botões com animações para destaque de links prioritários.
-* E-mail com mensagem automática pré-configurada para facilitar o contato direto.
-* Foto de perfil sincronizada via API do GitHub.
-* Deploy automático e gratuito via GitHub Pages.
-* Domínio personalizado vinculado ao usuário do GitHub.
+![Preview da Página de Links](./assets/img/banner-id-visual.png)
 
-## :sparkles: Melhorias
-> ### v1.0.0
-- [x] Alterar tema da página com JavaScript (Dark/Light).
-- [x] Implementar tags de SEO.
-- [x] Adicionar localização.
-- [x] Implementar foto de perfil sicronizada ao GitHub.
-- [x] Ajustar mensagem automática pré-configurada de email.
-> ### v2.0.0
-- [ ] Adaptar o layout em 2 abas (tabs): Bio (Biografia) e Contatos.
-- [ ] Adaptar o botão de alterar tema no novo layout.
-- [ ] Edição dinâmica de links via JSON ou painel simplificado.
-- [ ] Geração automática de QR Code da página.
-- [ ] Compartilhamento rápido via botão “Copiar link”.
-- [ ] Reestruturação completa do projeto para um ecossistema moderno com React, Next.js, TypeScript e Tailwind CSS, elevando o padrão de manutenção, performance e escalabilidade da aplicação.
-- [ ] [DOCS] Estabelecer um código de conduta do projeto.
-- [ ] [DOCS] Adicionar diretrizes de contribuição do projeto.
+## Recursos
 
----
-###### Desenvolvido por [Josué Lustosa ](https://github.com/josuelustosa) sob a licença [MIT](https://github.com/josuelustosa/links/blob/main/LICENSE.md).
+- Conteúdo de perfil, tecnologias e links centralizado em `data/site.json`.
+- Tabs acessíveis para as áreas **Links** e **Sobre**.
+- Tema claro/escuro, com preferência do sistema no primeiro acesso e persistência
+  da escolha manual.
+- Compartilhamento da URL canônica com feedback acessível.
+- Links externos protegidos com `noopener noreferrer`.
+- SVGs locais Phosphor e Devicons; fonte Jura local e carregada com
+  `font-display: swap`.
+- Layout responsivo para mobile, tablet e desktop.
+
+## Stack
+
+- HTML, CSS e JavaScript puros.
+- JSON como fonte de conteúdo editável.
+- GitHub Pages para hospedagem estática.
+
+## Executar localmente
+
+O projeto não requer instalação ou etapa de build.
+
+```bash
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Abra `http://127.0.0.1:8080` no navegador.
+
+## Manutenção de conteúdo
+
+Consulte o [guia de configuração dos links](./docs/configuracao-de-links.md)
+antes de editar `data/site.json`.
+
+## Qualidade
+
+Auditoria local mais recente com Lighthouse:
+
+| Categoria | Resultado |
+| --- | ---: |
+| Desempenho | 100 |
+| Acessibilidade | 100 |
+| Boas práticas | 100 |
+| SEO | 100 |
+
+Os resultados locais devem ser confirmados no ambiente de produção após a
+publicação.
+
+## Licenças e uso de assets
+
+O código é disponibilizado sob a [licença MIT](./LICENSE.md). Consulte
+[NOTICE.md](./NOTICE.md) para atribuições de fontes e ícones e para as
+restrições de reutilização de foto, currículo, marca e dados pessoais.

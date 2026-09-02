@@ -101,6 +101,17 @@ Descrição:
 
 > Nova versão da Página de Links, mantendo HTML, CSS e JavaScript, com interface responsiva, conteúdo configurável por JSON, tabs, tema persistente, cópia de link, otimizações de desempenho, acessibilidade e documentação.
 
+### Status de execução
+
+- ✅ Interface responsiva, conteúdo em JSON, tabs, tema persistente e cópia de
+  link implementados.
+- ✅ Abas Links e Sobre aprovadas visualmente, com SVGs e fonte locais.
+- ✅ Auditoria local de qualidade: Lighthouse 100 em desempenho,
+  acessibilidade, boas práticas e SEO.
+- ✅ Documentação de uso, manutenção e licenças atualizada.
+- ⏳ Validação em produção, pull request para `main`, tag `v2.0.0` e encerramento
+  da milestone dependem da publicação.
+
 Issues da V2:
 
 1. Preservar V1 e criar branch `dev`.
@@ -138,6 +149,9 @@ Mover para ela:
 │   │       ├── regular/
 │   │       └── fill/
 │   ├── img/
+│   ├── fonts/
+│   │   ├── jura-latin.woff2
+│   │   └── OFL.txt
 │   └── docs/
 ├── src/
 │   ├── styles/
@@ -306,7 +320,7 @@ Ações previstas:
 - Usar imagem local otimizada em WebP como alternativa caso a imagem remota impacte o carregamento.
 - Substituir fonte completa de ícones por SVGs locais/inline usados de fato.
 - Aplicar a política de ícones do Phosphor: SVGs locais, individuais e com pesos limitados ao necessário.
-- Limitar pesos de fontes e configurar `fontfont-display: swap`.
+- Limitar pesos de fontes e configurar `font-display: swap`.
 - Carregar scripts com `defer` ou módulos.
 - Remover animações contínuas e tarefas desnecessárias.
 - Corrigir contraste nos dois temas.
@@ -319,11 +333,12 @@ Validar com Lighthouse localmente e, depois da publicação em `main`, com PageS
 
 Atualizar:
 
-- `README.md`: visão geral, preview, funcionalidades, stack, estrutura e execução local.
-- `docs/configuracao-de-links.md`: campos e manutenção do JSON.
-- `CHANGELOG.md`: lançamento da V2.
+- ✅ `README.md`: visão geral, preview, funcionalidades, stack e execução local.
+- ✅ `docs/configuracao-de-links.md`: campos e manutenção do JSON.
+- ✅ `CHANGELOG.md`: histórico da V2 em preparação para a publicação.
 - `LICENSE`: MIT aplicável ao código.
-- `NOTICE.md`: foto, currículo, marca e informações pessoais não são licenciados para reutilização.
+- ✅ `NOTICE.md`: atribuições de terceiros e restrições para foto, currículo,
+  marca e informações pessoais.
 
 Adicionar ao roadmap:
 
