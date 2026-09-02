@@ -102,8 +102,9 @@ somente do ícone visual.
   próxima de `68px`; o CTA tem altura intrínseca, sem cortar o texto.
 - Os discos de ícone têm `40 × 40px`; indicadores à direita usam área visual
   de pelo menos `24 × 24px`.
-- O texto do card destacado usa cor escura de alto contraste sobre o laranja;
-  descrições dos cards regulares usam token de texto secundário.
+- O card destacado usa texto de alto contraste sobre uma superfície elevada com
+  acento laranja; descrições dos cards regulares usam token de texto
+  secundário.
 - Os cards de contato e padrão são clicáveis por inteiro; no CTA, somente a
   pílula de ação é clicável. Ambos têm foco visível em `--accent`, estados de
   hover e toque sem alterar a ordem do conteúdo.
