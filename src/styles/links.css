@@ -128,7 +128,8 @@
 
 .link-card--contact .link-card__description {
   color: var(--link-contact-muted);
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 16px;
   letter-spacing: -0.12px;
 }
 
