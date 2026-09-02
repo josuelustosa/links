@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../../assets/fonts/jura-latin.woff2") format("woff2");
+}
+
 * {
   box-sizing: border-box;
 }
