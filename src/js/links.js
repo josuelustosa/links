@@ -34,22 +34,18 @@ function createText(className, text) {
   return element;
 }
 
-function getAccessibleLabel(link) {
-  const segments = [link.title, link.description, link.actionLabel]
-    .filter(Boolean)
-    .map((segment) => (segment.endsWith(".") ? segment : `${segment}.`))
-    .join(" ");
-
-  return link.newTab ? `${segments} Abre em nova aba.` : segments;
-}
-
 function applyLinkAttributes(anchor, link) {
   anchor.href = link.href;
-  anchor.setAttribute("aria-label", getAccessibleLabel(link));
 
   if (link.newTab) {
     anchor.target = "_blank";
     anchor.rel = "noopener noreferrer";
+  }
+}
+
+function appendNewTabHint(element, link) {
+  if (link.newTab) {
+    element.append(createText("visually-hidden", "Abre em nova aba"));
   }
 }
 
@@ -72,6 +68,7 @@ function createAction(link) {
     createText("link-card__action-label", link.actionLabel),
     createIcon("arrow-right", "link-card__action-icon"),
   );
+  appendNewTabHint(action, link);
 
   return action;
 }
@@ -105,6 +102,7 @@ function createCard(link) {
     content,
     isCta ? createAction(link) : createIndicator(link),
   );
+  appendNewTabHint(card, link);
   item.append(card);
 
   return item;
