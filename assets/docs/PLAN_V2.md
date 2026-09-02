@@ -2,7 +2,8 @@
 
 ## 1. Objetivo e escopo
 
-A V2 moderniza a Página de Links sem migrar a stack atual. O projeto continuará estático, com HTML, CSS, JavaScript e GitHub Pages.
+A V2 moderniza a Página de Links sem migrar a stack atual. O projeto continuará
+estático, com HTML, CSS e JavaScript, hospedado na Vercel.
 
 A experiência seguirá uma única composição responsiva: mesma hierarquia em mobile, tablet e desktop, alterando apenas largura, espaçamentos e escala.
 
@@ -24,23 +25,25 @@ A experiência seguirá uma única composição responsiva: mesma hierarquia em 
 - QR Code.
 - React, Next.js e Tailwind CSS.
 - Painel administrativo, backend ou autenticação.
-- Deploy de DEV, GitHub Actions adicionais ou segunda URL de preview.
+- GitHub Actions adicionais.
 - `CODE_OF_CONDUCT.md` e `CONTRIBUTING.md`.
 
 ## 2. Versão atual e controle de branches
 
 A milestone `v1` está 100% concluída. Ela representa formalmente a versão atual do projeto.
 
-| Elemento       | Definição                                     |
-| -------------- | --------------------------------------------- |
-| Milestone `v1` | Histórico funcional da V1; deve ser encerrada |
-| Tag `v1.0.0`   | Referência técnica imutável do commit da V1   |
-| `main`         | Código de produção e origem do GitHub Pages   |
-| `dev`          | Desenvolvimento e validação da V2             |
+| Elemento          | Definição                                     |
+| ----------------- | --------------------------------------------- |
+| Milestone `v1`    | Histórico funcional da V1; deve ser encerrada |
+| Tag `v1.0.0`      | Referência técnica imutável do commit da V1   |
+| `main`            | Código estável promovido após a validação     |
+| `dev`             | Desenvolvimento e validação da V2             |
+| Vercel Preview    | Ambiente de revisão antes da promoção         |
+| Vercel Production | Ambiente público da aplicação                 |
 
 ### Etapa inicial obrigatória
 
-1. Confirmar que `main` corresponde ao site em produção.
+1. Confirmar que o ambiente Vercel Production corresponde à versão estável.
 2. Criar a tag `v1.0.0`, se ainda não existir.
 3. Fechar a milestone `v1`.
 4. Criar a branch `dev` a partir de `main`.
@@ -66,15 +69,17 @@ git push -u origin dev
 
 ```mermaid
 flowchart TD
-  D["dev: desenvolvimento e testes locais"] --> PR["Pull request dev → main"]
-  PR --> M["main: produção no GitHub Pages"]
+  D["dev: desenvolvimento e testes locais"] --> P["Vercel Preview: validação"]
+  P --> R["Validação e promoção"]
+  R --> M["main: código estável"]
+  R --> V["Vercel Production: publicação"]
 ```
 
 - Todo o trabalho da V2 acontece em `dev`.
-- O site publicado não é alterado durante o desenvolvimento.
+- A Vercel disponibiliza Preview para validar mudanças antes da promoção.
 - Ao concluir e validar a V2, abrir PR de `dev` para `main`.
-- O GitHub Pages continua publicando apenas a `main`.
-- Não haverá ambiente de DEV hospedado agora.
+- A Vercel publica o ambiente Production a partir da _Production Branch_
+  configurada no projeto.
 
 Para testar localmente:
 
@@ -85,7 +90,9 @@ python3 -m http.server 8080
 
 Acessar em `http://localhost:8080`. Isso será necessário porque o projeto buscará o JSON via `fetch()`.
 
-A estrutura também deixa uma migração futura para Vercel naturalmente preparada: `main` poderá ser produção e `dev` poderá ser usada para previews, sem alterar o fluxo de branches.
+Os ambientes Preview e Production são gerenciados pela Vercel. A configuração
+da _Production Branch_ no painel da plataforma é a fonte de verdade para a
+branch que dispara cada publicação.
 
 ## 4. Organização das milestones
 
@@ -109,8 +116,10 @@ Descrição:
 - ✅ Auditoria local de qualidade: Lighthouse 100 em desempenho,
   acessibilidade, boas práticas e SEO.
 - ✅ Documentação de uso, manutenção e licenças atualizada.
-- ⏳ Validação em produção, pull request para `main`, tag `v2.0.0` e encerramento
-  da milestone dependem da publicação.
+- ✅ Ambientes Preview e Production configurados na Vercel para validação e
+  publicação.
+- ⏳ Pull request para `main`, tag `v2.0.0` e encerramento da milestone dependem
+  da publicação final.
 
 Issues da V2:
 
@@ -327,13 +336,14 @@ Ações previstas:
 - Garantir foco visível, nomes acessíveis, textos alternativos e hierarquia de títulos.
 - Revisar favicon, canonical, meta description, Open Graph e JSON-LD.
 
-Validar com Lighthouse localmente e, depois da publicação em `main`, com PageSpeed Insights na URL de produção.
+Validar com Lighthouse localmente e, depois da publicação na Vercel Production,
+com PageSpeed Insights na URL pública.
 
 ## 9. Documentação e licença
 
 Atualizar:
 
-- ✅ `README.md`: visão geral, preview, funcionalidades, stack e execução local.
+- ✅ `README.md`: visão geral, tecnologias utilizadas, Principais funcionalidades, evolução e Licença e assets.
 - ✅ `docs/configuracao-de-links.md`: campos e manutenção do JSON.
 - ✅ `CHANGELOG.md`: histórico da V2 em preparação para a publicação.
 - `LICENSE`: MIT aplicável ao código.
