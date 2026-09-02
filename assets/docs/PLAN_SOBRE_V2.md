@@ -54,8 +54,9 @@ explícitas e prioridade de carregamento.
 - Permitir quebra das tecnologias abaixo de 390px, sem rolagem horizontal.
 - Manter o compartilhamento como cópia da URL canônica, conforme o plano V2.
 - Aplicar foco visível e nomes acessíveis aos botões de ícone.
-- Usar `#121212` no rótulo da tab ativa: o branco previsto no Figma não atinge
-  contraste AA a 16px sobre `#FE5626`.
+- Usar rótulo branco na tab ativa sobre `--accent` (`#FE5626`), conforme a
+  referência visual aprovada. A combinação não alcança contraste AA a 16px;
+  essa exceção visual é uma decisão consciente da interface.
 
 ## Arquivos envolvidos
 
