@@ -26,12 +26,6 @@ function getSavedTheme() {
   }
 }
 
-function getPreferredTheme() {
-  return window.matchMedia?.("(prefers-color-scheme: light)").matches
-    ? "light"
-    : "dark";
-}
-
 function saveTheme(theme) {
   try {
     localStorage.setItem(storageKey, theme);
@@ -48,7 +42,7 @@ export function initTheme() {
     return;
   }
 
-  const initialTheme = getSavedTheme() || getPreferredTheme();
+  const initialTheme = getSavedTheme() || "dark";
 
   applyTheme(initialTheme, button, icon);
 

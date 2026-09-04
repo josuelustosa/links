@@ -23,8 +23,8 @@ responsiva e feita para compartilhar.
   página.
 - Layout responsivo para celular, tablet e desktop.
 - Tabs acessíveis para as áreas **Links** e **Sobre**.
-- Alternância entre temas claro e escuro, respeitando a preferência do sistema
-  no primeiro acesso.
+- Alternância entre temas claro e escuro, com tema escuro como padrão no
+  primeiro acesso.
 - Compartilhamento da URL da página com feedback acessível.
 - E-mail e solicitação de página personalizada com mensagens pré-configuradas.
 - Edição de perfil, tecnologias e links por

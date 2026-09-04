@@ -293,7 +293,7 @@ O HTML manterá somente os contêineres semânticos; o JavaScript buscará o JSO
 
 ### Tema
 
-- Considerar a preferência do sistema no primeiro acesso.
+- Aplicar o tema escuro como padrão no primeiro acesso.
 - Persistir escolha manual em `localStorage`.
 - Usar botão acessível com `aria-label`, foco visível e área adequada para toque.
 

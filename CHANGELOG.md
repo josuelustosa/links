@@ -18,6 +18,8 @@ versionamento seguirá [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 - CSS modularizado por responsabilidade.
 - Links passam a ser a aba inicial.
+- Tema escuro passa a ser o padrão no primeiro acesso, sem depender da
+  preferência do sistema.
 
 ### Fixed
 
