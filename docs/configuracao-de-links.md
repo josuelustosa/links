@@ -28,18 +28,18 @@ apresentar os projetos antes das redes profissionais.
 
 Campos usados:
 
-| Campo | Obrigatório | Uso |
-| --- | --- | --- |
-| `id` | Sim | Identificador estável e único. |
-| `title` | Sim | Título visível do card. |
-| `description` | Sim | Texto complementar do card. |
-| `href` | Sim | URL, caminho local ou `mailto:` de destino. |
-| `icon` | Sim | Nome de um ícone Phosphor local. |
-| `variant` | Sim | `contact`, `default` ou `cta`. |
-| `visible` | Sim | Define se o item será renderizado. |
-| `newTab` | Sim | Abre o destino em nova aba quando `true`. |
-| `actionLabel` | Para `cta` | Texto da pílula clicável do CTA. |
-| `featured` | Não | Mantido por compatibilidade; a aparência é controlada por `variant`. |
+| Campo         | Obrigatório | Uso                                                                  |
+| ------------- | ----------- | -------------------------------------------------------------------- |
+| `id`          | Sim         | Identificador estável e único.                                       |
+| `title`       | Sim         | Título visível do card.                                              |
+| `description` | Sim         | Texto complementar do card.                                          |
+| `href`        | Sim         | URL, caminho local ou `mailto:` de destino.                          |
+| `icon`        | Sim         | Nome de um ícone Phosphor local.                                     |
+| `variant`     | Sim         | `contact`, `default` ou `cta`.                                       |
+| `visible`     | Sim         | Define se o item será renderizado.                                   |
+| `newTab`      | Sim         | Abre o destino em nova aba quando `true`.                            |
+| `actionLabel` | Para `cta`  | Texto da pílula clicável do CTA.                                     |
+| `featured`    | Não         | Mantido por compatibilidade; a aparência é controlada por `variant`. |
 
 Exemplo de link externo (Portfólio):
 
@@ -47,7 +47,7 @@ Exemplo de link externo (Portfólio):
 {
   "id": "portfolio",
   "title": "Portfólio",
-  "description": "Cases, interfaces e produtos",
+  "description": "Hub de projetos e trabalhos",
   "href": "https://portfolio-josue-lustosa.vercel.app/",
   "icon": "briefcase",
   "variant": "default",

@@ -23,12 +23,12 @@ página; a aba **Sobre** permanece disponível pela navegação em tabs.
 Manter a ordem abaixo no `data/site.json`:
 
 1. **Falar por e-mail** — `Contato direto para oportunidades`.
-2. **Portfólio** — `Cases, interfaces e produtos`.
+2. **Portfólio** — `Hub de projetos e trabalhos`.
 3. **LinkedIn** — `Perfil profissional`.
-4. **GitHub** — `Código aberto e bastidores`.
+4. **GitHub** — `Repositórios de código`.
 5. **Currículo** — `Baixar PDF`.
 6. **Sua página de links, do seu jeito** — `Crie sua própria página
-   personalizada com o que importa.`; ação `Obtenha sua página`.
+personalizada com o que importa.`; ação `Obtenha sua página`.
 
 O item de e-mail atual deve ser transformado no card destacado, sem duplicar
 outro link de e-mail na lista. O CTA comercial conserva o `mailto:` atual,
@@ -54,7 +54,7 @@ do CTA comercial.
    - `cta`: card com borda laranja, ícone de globo contornado, texto em duas
      linhas e ação visual em formato de pílula.
 4. Preservar o suporte a `visible`, `newTab`, `href` e `rel="noopener
-   noreferrer"` para links externos.
+noreferrer"` para links externos.
 5. Reutilizar `tabs.js`, `theme.js`, `share.js` e a estrutura compartilhada
    de `index.html`; a mudança fica restrita ao painel Links e à sua renderização.
 
