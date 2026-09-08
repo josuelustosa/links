@@ -15,7 +15,7 @@ página; a aba **Sobre** permanece disponível pela navegação em tabs.
 - Perfil, ações, tabs, divisor e assinatura reutilizam a base aprovada da aba
   Sobre; não devem ser duplicados.
 - Tabs: `342 × 56px`; Links inicia ativa e Sobre permanece inativa.
-- Lista: um contato em destaque, três links regulares e um CTA comercial, com
+- Lista: um contato em destaque, quatro links regulares e um CTA comercial, com
   espaçamento vertical de aproximadamente `16px` entre cards.
 
 ## Conteúdo aprovado
@@ -23,15 +23,21 @@ página; a aba **Sobre** permanece disponível pela navegação em tabs.
 Manter a ordem abaixo no `data/site.json`:
 
 1. **Falar por e-mail** — `Contato direto para oportunidades`.
-2. **LinkedIn** — `Perfil profissional`.
-3. **GitHub** — `Projetos e códigos`.
-4. **Currículo** — `Baixar PDF`.
-5. **Sua página de links, do seu jeito** — `Crie sua própria página
+2. **Portfólio** — `Cases, interfaces e produtos`.
+3. **LinkedIn** — `Perfil profissional`.
+4. **GitHub** — `Código aberto e bastidores`.
+5. **Currículo** — `Baixar PDF`.
+6. **Sua página de links, do seu jeito** — `Crie sua própria página
    personalizada com o que importa.`; ação `Obtenha sua página`.
 
 O item de e-mail atual deve ser transformado no card destacado, sem duplicar
 outro link de e-mail na lista. O CTA comercial conserva o `mailto:` atual,
 com assunto e corpo preenchidos.
+
+O Portfólio abre `https://portfolio-josue-lustosa.vercel.app/` em nova aba e
+ocupa o primeiro card regular para apresentar os projetos antes das redes
+profissionais. Usa o ícone `briefcase` (maleta); o `globe` continua exclusivo
+do CTA comercial.
 
 ## Escopo
 
@@ -84,7 +90,7 @@ Aplicar a política de Phosphor Icons do plano V2. Antes de codificar, baixar
 somente os SVGs individuais aprovados, em peso `regular`, e incluí-los em
 `assets/icons/phosphor/regular/`:
 
-- `envelope`, `linkedin-logo`, `github-logo`, `file-text`, `globe`,
+- `envelope`, `briefcase`, `linkedin-logo`, `github-logo`, `file-text`, `globe`,
   `arrow-right` e `arrow-square-out`.
 
 Confirmar os nomes no catálogo oficial do Phosphor antes do download. Criar ou
@@ -144,8 +150,8 @@ somente do ícone visual.
 - Links é a aba inicial no viewport de 390px.
 - Perfil compartilhado, tabs, divisor e rodapé preservam o comportamento da
   aba Sobre.
-- A lista exibe exatamente os cinco itens aprovados, na ordem definida.
-- O e-mail é o único card de contato destacado; LinkedIn, GitHub e Currículo
+- A lista exibe exatamente os seis itens aprovados, na ordem definida.
+- O e-mail é o único card de contato destacado; Portfólio, LinkedIn, GitHub e Currículo
   usam cards regulares; o CTA usa sua variante própria.
 - Título, descrição e ação do CTA vêm exclusivamente do JSON.
 - Todos os links externos têm `target="_blank"`, `rel="noopener noreferrer"`

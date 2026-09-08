@@ -1,6 +1,7 @@
 const iconPaths = {
   "arrow-right": "assets/icons/phosphor/regular/arrow-right.svg",
   "arrow-square-out": "assets/icons/phosphor/regular/arrow-square-out.svg",
+  briefcase: "assets/icons/phosphor/regular/briefcase.svg",
   envelope: "assets/icons/phosphor/regular/envelope.svg",
   "file-text": "assets/icons/phosphor/regular/file-text.svg",
   globe: "assets/icons/phosphor/regular/globe.svg",

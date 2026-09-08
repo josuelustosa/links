@@ -4,6 +4,11 @@
   "license": "MIT",
   "icons": [
     {
+      "name": "briefcase",
+      "weight": "regular",
+      "usedBy": "Links portfolio card"
+    },
+    {
       "name": "envelope",
       "weight": "regular",
       "usedBy": "Links contact card"

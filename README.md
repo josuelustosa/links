@@ -1,6 +1,6 @@
 # Links — Josué Lustosa
 
-Uma página pessoal para apresentar meus canais profissionais, currículo e
+Uma página pessoal para apresentar meu portfólio, canais profissionais, currículo e
 trajetória como Desenvolvedor de Software — com uma experiência direta,
 responsiva e feita para compartilhar.
 
@@ -19,7 +19,7 @@ responsiva e feita para compartilhar.
 
 ## Principais funcionalidades
 
-- Centralização de contatos, redes profissionais e currículo em uma única
+- Centralização de portfólio, contatos, redes profissionais e currículo em uma única
   página.
 - Layout responsivo para celular, tablet e desktop.
 - Tabs acessíveis para as áreas **Links** e **Sobre**.

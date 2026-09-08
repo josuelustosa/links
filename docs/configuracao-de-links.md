@@ -21,7 +21,12 @@ tecnologias. Cada tecnologia usa:
 
 ## Links
 
-Os itens no array `links` são exibidos na mesma ordem do arquivo. Campos usados:
+Os itens no array `links` são exibidos na mesma ordem do arquivo. A ordem atual
+é: e-mail, Portfólio, LinkedIn, GitHub, Currículo e CTA de página personalizada.
+O Portfólio é o primeiro link regular, logo após o contato em destaque, para
+apresentar os projetos antes das redes profissionais.
+
+Campos usados:
 
 | Campo | Obrigatório | Uso |
 | --- | --- | --- |
@@ -36,15 +41,15 @@ Os itens no array `links` são exibidos na mesma ordem do arquivo. Campos usados
 | `actionLabel` | Para `cta` | Texto da pílula clicável do CTA. |
 | `featured` | Não | Mantido por compatibilidade; a aparência é controlada por `variant`. |
 
-Exemplo de link externo:
+Exemplo de link externo (Portfólio):
 
 ```json
 {
-  "id": "linkedin",
-  "title": "LinkedIn",
-  "description": "Perfil profissional",
-  "href": "https://www.linkedin.com/in/usuario/",
-  "icon": "linkedin-logo",
+  "id": "portfolio",
+  "title": "Portfólio",
+  "description": "Cases, interfaces e produtos",
+  "href": "https://portfolio-josue-lustosa.vercel.app/",
+  "icon": "briefcase",
   "variant": "default",
   "visible": true,
   "newTab": true
@@ -60,6 +65,10 @@ em nova aba.
 Os ícones de interface estão em `assets/icons/phosphor/regular/`; o inventário e
 a origem de cada asset ficam em `assets/icons/phosphor/manifest.json`. Não use
 CDNs ou URLs remotas para novos ícones.
+
+O Portfólio usa `briefcase` (maleta); `globe` permanece no CTA de página
+personalizada. Ao adicionar um ícone, inclua o SVG local, registre-o no
+manifest e adicione seu caminho ao mapa `iconPaths` em `src/js/links.js`.
 
 Antes de publicar uma alteração, execute a página localmente e confirme que o
 JSON é válido, os destinos estão corretos e não há overflow nos viewports

@@ -236,7 +236,7 @@ a concentrar regras de componentes em um único arquivo.
   - ativo: preenchimento laranja;
   - inativo: superfície escura/clara discreta.
 
-- Aba `Links`: e-mail, LinkedIn, GitHub, currículo e CTA comercial.
+- Aba `Links`: e-mail, Portfólio, LinkedIn, GitHub, currículo e CTA comercial.
 - Aba `Sobre`: bio curta, stacks e posicionamento profissional.
 
 ### Política de ícones — Phosphor Icons
