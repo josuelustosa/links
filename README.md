@@ -1,12 +1,12 @@
+![Preview da Página de Links](./assets/img/preview-open-graph.png)
+
 # Links — Josué Lustosa
 
 Uma página pessoal para apresentar meu portfólio, canais profissionais, currículo e
 trajetória como Desenvolvedor de Software — com uma experiência direta,
 responsiva e feita para compartilhar.
 
-[Acessar a Página de Links V2](https://links-six-gules.vercel.app/)
-
-<!-- ![Preview da Página de Links](./assets/img/banner-id-visual.png) -->
+> Acesse o site no ar: [links-josue-lustosa.vercel.app](https://links-josue-lustosa.vercel.app)
 
 ## Tecnologias utilizadas
 
