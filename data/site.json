@@ -71,7 +71,7 @@
       "id": "curriculo",
       "title": "Currículo",
       "description": "Baixar PDF",
-      "href": "./assets/docs/Curriculo-Josue-Lustosa-Desenvolvedor.pdf",
+      "href": "./assets/documents/curriculo-josue-lustosa-desenvolvedor.pdf",
       "icon": "file-text",
       "variant": "default",
       "featured": false,
