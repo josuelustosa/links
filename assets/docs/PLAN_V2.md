@@ -39,7 +39,7 @@ A milestone `v1` está 100% concluída. Ela representa formalmente a versão atu
 | `main`            | Código estável promovido após a validação     |
 | `dev`             | Desenvolvimento e validação da V2             |
 | Vercel Preview    | Ambiente de revisão antes da promoção         |
-| Vercel Production | Ambiente público da aplicação                 |
+| Vercel Production | Ambiente público em `links-josue-lustosa.vercel.app` |
 
 ### Etapa inicial obrigatória
 
@@ -92,7 +92,8 @@ Acessar em `http://localhost:8080`. Isso será necessário porque o projeto busc
 
 Os ambientes Preview e Production são gerenciados pela Vercel. A configuração
 da _Production Branch_ no painel da plataforma é a fonte de verdade para a
-branch que dispara cada publicação.
+branch que dispara cada publicação. O GitHub Pages continua ativo, mas a URL
+canônica de produção é `https://links-josue-lustosa.vercel.app/`.
 
 ## 4. Organização das milestones
 
