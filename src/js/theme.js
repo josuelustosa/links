@@ -1,22 +1,56 @@
-let themeToggler = document.getElementById("icon-theme");
-themeToggler.addEventListener("click", () => {
-  let targetTheme;
-  let currentTheme = document.documentElement.getAttribute("data-theme");
-  if (currentTheme === "light") {
-    targetTheme = "dark";
+const storageKey = "links-theme";
 
-    let iconTheme = document.querySelector("#icon-theme");
-    iconTheme.setAttribute("src", "assets/icons/sun-theme.svg");
-  } else {
-    targetTheme = "light";
+const themes = {
+  dark: {
+    icon: "assets/icons/phosphor/regular/sun.svg",
+    label: "Ativar tema claro",
+  },
+  light: {
+    icon: "assets/icons/phosphor/regular/moon.svg",
+    label: "Ativar tema escuro",
+  },
+};
 
-    let imgTheme = document.querySelector("#icon-theme");
-    imgTheme.setAttribute("src", "assets/icons/moon-theme.svg");
+function applyTheme(theme, button, icon) {
+  document.documentElement.dataset.theme = theme;
+  button.setAttribute("aria-label", themes[theme].label);
+  button.setAttribute("aria-pressed", String(theme === "light"));
+  icon.src = themes[theme].icon;
+}
+
+function getSavedTheme() {
+  try {
+    return localStorage.getItem(storageKey);
+  } catch {
+    return null;
+  }
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(storageKey, theme);
+  } catch {
+    // O tema atual continua aplicado quando o armazenamento não está disponível.
+  }
+}
+
+export function initTheme() {
+  const button = document.querySelector("[data-theme-toggle]");
+  const icon = document.querySelector("[data-theme-icon]");
+
+  if (!button || !icon) {
+    return;
   }
 
-  document.documentElement.setAttribute("data-theme", targetTheme);
-});
+  const initialTheme = getSavedTheme() || "dark";
 
-let browserTheme = window.matchMedia("(prefers-color-scheme: light)").matches
-  ? "light"
-  : "dark";
+  applyTheme(initialTheme, button, icon);
+
+  button.addEventListener("click", () => {
+    const currentTheme = document.documentElement.dataset.theme;
+    const nextTheme = currentTheme === "light" ? "dark" : "light";
+
+    applyTheme(nextTheme, button, icon);
+    saveTheme(nextTheme);
+  });
+}

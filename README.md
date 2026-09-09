@@ -1,43 +1,58 @@
-# :link: Página de Contatos
-Esse projeto foi proposto durante a **Maratona Explorer 2.0**, da [Rocketseat](https://www.rocketseat.com.br/), que ocorreu de 03 a 08 de Julho de 2022. A partir da **[versão 2.0.0](https://github.com/josuelustosa/links#v200)** deste projeto, todos os direitos e recursos de implementação estão reservados ao autor, conforme a [MIT License](https://github.com/josuelustosa/links/blob/main/LICENSE.md).
-> #### Acesse o site no ar: https://josuelustosa.github.io/links/
+![Preview da Página de Links](./assets/img/preview-open-graph.png)
 
-## :art: Interfaces de Usuário e Identidade Visual (v1.0.0)
-![myimage-alt-tag](https://github.com/josuelustosa/links/blob/main/assets/img/banner-id-visual.png)
+# Links — Josué Lustosa
 
-## :wrench: Tecnologias utilizadas
-* :computer: HMTL, CSS e JavaScript
-*  :space_invader: Bootstrap Icons
-* :abc: Google Font
-* :rocket: GitHub Pages (deploy)
-* :art: Figma - [Acessar Design](https://www.figma.com/file/E4XYlmsqLurJ9GwlxoGF6d/P%C3%A1gina-de-Contatos-por-Josu%C3%A9-Lustosa?type=design&node-id=5725%3A2&mode=design&t=xHtXEtk9isi44hjr-1) 
+Uma página pessoal para apresentar meu portfólio, canais profissionais, currículo e
+trajetória como Desenvolvedor de Software — com uma experiência direta,
+responsiva e feita para compartilhar.
 
-## :hammer_and_wrench: Principais funcionalidades
-* Centralização de contatos, redes sociais e links relevantes em uma única página.
-* Layout 100% responsivo para celular, tablet e desktop.
-* Alternância entre tema escuro (padrão) e claro.
-* Botões com animações para destaque de links prioritários.
-* E-mail com mensagem automática pré-configurada para facilitar o contato direto.
-* Foto de perfil sincronizada via API do GitHub.
-* Deploy automático e gratuito via GitHub Pages.
-* Domínio personalizado vinculado ao usuário do GitHub.
+> Acesse o site no ar: [links-josue-lustosa.vercel.app](https://links-josue-lustosa.vercel.app)
 
-## :sparkles: Melhorias
-> ### v1.0.0
-- [x] Alterar tema da página com JavaScript (Dark/Light).
-- [x] Implementar tags de SEO.
-- [x] Adicionar localização.
-- [x] Implementar foto de perfil sicronizada ao GitHub.
-- [x] Ajustar mensagem automática pré-configurada de email.
-> ### v2.0.0
-- [ ] Adaptar o layout em 2 abas (tabs): Bio (Biografia) e Contatos.
-- [ ] Adaptar o botão de alterar tema no novo layout.
-- [ ] Edição dinâmica de links via JSON ou painel simplificado.
-- [ ] Geração automática de QR Code da página.
-- [ ] Compartilhamento rápido via botão “Copiar link”.
-- [ ] Reestruturação completa do projeto para um ecossistema moderno com React, Next.js, TypeScript e Tailwind CSS, elevando o padrão de manutenção, performance e escalabilidade da aplicação.
-- [ ] [DOCS] Estabelecer um código de conduta do projeto.
-- [ ] [DOCS] Adicionar diretrizes de contribuição do projeto.
+## Tecnologias utilizadas
 
----
-###### Desenvolvido por [Josué Lustosa ](https://github.com/josuelustosa) sob a licença [MIT](https://github.com/josuelustosa/links/blob/main/LICENSE.md).
+- 💻 HTML, CSS e JavaScript puros.
+- 📝 JSON como fonte de conteúdo editável.
+- 🧩 Phosphor Icons e Devicons locais.
+- 🔠 Fonte Jura local.
+- 🚀 Vercel com ambientes Preview e Production.
+- 🎨 Figma para referência e validação visual.
+
+## Principais funcionalidades
+
+- Centralização de portfólio, contatos, redes profissionais e currículo em uma única
+  página.
+- Layout responsivo para celular, tablet e desktop.
+- Tabs acessíveis para as áreas **Links** e **Sobre**.
+- Alternância entre temas claro e escuro, com tema escuro como padrão no
+  primeiro acesso.
+- Compartilhamento da URL da página com feedback acessível.
+- E-mail e solicitação de página personalizada com mensagens pré-configuradas.
+- Edição de perfil, tecnologias e links por
+  [`data/site.json`](./data/site.json).
+
+Consulte o [guia de configuração dos links](./docs/guides/links-configuration.md)
+para personalizar os dados exibidos.
+
+## Evolução
+
+### v1.0.0
+
+- Página de contatos, redes sociais e currículo.
+- Tema claro e escuro.
+- SEO e localização.
+- Publicação estática inicial.
+
+### v2.0.0
+
+- Interface reorganizada em tabs Links e Sobre.
+- Conteúdo editável via JSON.
+- Compartilhamento rápido por cópia de link.
+- Ícones, fonte e foto de perfil locais e otimizados.
+- Estrutura de estilos modularizada por responsabilidade.
+- Ambientes Vercel Preview e Production configurados.
+
+## Licença e assets
+
+O código é disponibilizado sob a [licença MIT](./LICENSE.md). Consulte
+[NOTICE.md](./NOTICE.md) para atribuições de fontes e ícones e para as
+restrições de reutilização de foto, currículo, marca e dados pessoais.
