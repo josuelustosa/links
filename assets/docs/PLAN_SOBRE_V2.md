@@ -41,7 +41,7 @@ O JSON deve guardar a biografia aprovada e uma coleção `technologies` com
 
 A foto de perfil usa o asset local otimizado
 `assets/img/perfil-josue-lustosa.webp`. A versão de origem permanece em
-`assets/img/perfil-josue-lustosa-secao.jpg` e a imagem exibida recebe dimensões
+`assets/img/perfil-josue-lustosa.jpg` e a imagem exibida recebe dimensões
 explícitas e prioridade de carregamento.
 
 ## Decisões de implementação
