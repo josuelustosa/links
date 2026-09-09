@@ -345,7 +345,7 @@ com PageSpeed Insights na URL pública.
 Atualizar:
 
 - ✅ `README.md`: visão geral, tecnologias utilizadas, Principais funcionalidades, evolução e Licença e assets.
-- ✅ `docs/configuracao-de-links.md`: campos e manutenção do JSON.
+- ✅ `docs/guides/links-configuration.md`: campos e manutenção do JSON.
 - ✅ `CHANGELOG.md`: histórico da V2 em preparação para a publicação.
 - `LICENSE`: MIT aplicável ao código.
 - ✅ `NOTICE.md`: atribuições de terceiros e restrições para foto, currículo,

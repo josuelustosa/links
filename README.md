@@ -30,7 +30,7 @@ responsiva e feita para compartilhar.
 - Edição de perfil, tecnologias e links por
   [`data/site.json`](./data/site.json).
 
-Consulte o [guia de configuração dos links](./docs/configuracao-de-links.md)
+Consulte o [guia de configuração dos links](./docs/guides/links-configuration.md)
 para personalizar os dados exibidos.
 
 ## Evolução

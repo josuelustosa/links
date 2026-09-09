@@ -1,6 +1,6 @@
 # Configuração de conteúdo
 
-O conteúdo exibido na página é mantido em [`data/site.json`](../data/site.json).
+O conteúdo exibido na página é mantido em [`data/site.json`](../../data/site.json).
 Edite somente os valores necessários e preserve a sintaxe JSON: chaves e textos
 entre aspas duplas, itens separados por vírgula e sem comentários.
 
