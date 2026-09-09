@@ -150,19 +150,29 @@ Mover para ela:
 
 ```text
 /
-├── data/
-│   └── site.json
 ├── assets/
-│   ├── icons/
-│   │   └── phosphor/
-│   │       ├── manifest.json
-│   │       ├── regular/
-│   │       └── fill/
-│   ├── img/
+│   ├── documents/
+│   │   └── curriculo-josue-lustosa-desenvolvedor.pdf
 │   ├── fonts/
 │   │   ├── jura-latin.woff2
 │   │   └── OFL.txt
-│   └── docs/
+│   ├── icons/
+│   │   ├── devicons/
+│   │   └── phosphor/
+│   │       ├── manifest.json
+│   │       └── regular/
+│   └── img/
+├── data/
+│   └── site.json
+├── docs/
+│   ├── README.md
+│   ├── archive/
+│   │   └── v2/
+│   │       ├── PLAN_LINKS_V2.md
+│   │       ├── PLAN_SOBRE_V2.md
+│   │       └── PLAN_V2.md
+│   └── guides/
+│       └── links-configuration.md
 ├── src/
 │   ├── styles/
 │   │   ├── index.css
